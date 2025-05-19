@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Statistik</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { primary: "#2196F3", secondary: "#FF5722" },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :where([class^="ri-"])::before {
+        content: "\f3c2";
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #f8f9fa;
+      }
+      .category-item {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .gradient-bg {
+        background: linear-gradient(
+          180deg,
+          #0e87c5 0%,
+          rgba(14, 135, 197, 0.8) 50%,
+          rgba(255, 255, 255, 0) 100%
+        );
+      }
+    </style>
+  </head>
+  <body class="bg-white">
+    <div
+      id="home-page"
+      class="relative pb-20 min-h-[762px] mx-auto w-full max-w-[420px]"
+    >
+      <!-- Header Navigation -->
+      <header
+        class="gradient-bg w-full max-w-[420px] h-[180px] fixed top-0 left-1/2 -translate-x-1/2 z-10 pt-4 px-4"
+      >
+        <div class="flex justify-between items-center">
+          <div class="flex items-center gap-2">
+            <div
+              class="w-10 h-10 bg-white rounded-lg flex items-center justify-center"
+            >
+              <i class="ri-book-open-line text-primary ri-lg"></i>
+            </div>
+            <span class="text-white font-semibold text-lg"
+              >Statistik Surabaya</span
+            >
+          </div>
+          <div class="flex gap-3">
+            <div class="w-8 h-8 flex items-center justify-center">
+              <i class="ri-user-line text-white ri-lg cursor-pointer"></i>
+            </div>
+            <div class="w-8 h-8 flex items-center justify-center">
+              <i class="ri-question-line text-white ri-lg cursor-pointer"></i>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Main Content -->
+      <main class="pt-[180px] pb-20 px-4">
+        <!-- Blue Category Section -->
+        <div class="grid grid-cols-4 gap-4 mb-6">
+          <!-- Row 1 -->
+          <div class="flex flex-col items-center">
+            <div
+              class="w-16 h-16 bg-white shadow rounded-full flex items-center justify-center mb-2"
+            >
+              <img
+                src="https://readdy.ai/api/search-image?query=icon%2C%20Simple%20gender%20symbol%2C%20male%20and%20female%20symbols%20combined%2C%20minimalist%20design%2C%20clear%20lines%2C%20prominent%20main%20subject%2C%20the%20icon%20should%20take%20up%2070%25%20of%20the%20frame%2C%20isolated%20on%20blue%20background%2C%20centered%20composition%2C%20no%20shadows%2C%20no%20text%2C%20Content%20simple&width=64&height=64&seq=1&orientation=squarish"
+                alt="Gender"
+                class="w-10 h-10 object-contain"
+              />
+            </div>
+            <span class="text-xs text-center category-item">Gender</span>
+          </div>
+
+          <div class="flex flex-col items-center">
+            <div
+              class="w-16 h-16 bg-white shadow rounded-full flex items-center justify-center mb-2"
+            >
+              <img
+                src="https://readdy.ai/api/search-image?query=icon%2C%20Simple%20globe%20or%20world%20map%2C%20minimalist%20design%2C%20clear%20lines%2C%20prominent%20main%20subject%2C%20the%20icon%20should%20take%20up%2070%25%20of%20the%20frame%2C%20isolated%20on%20blue%20background%2C%20centered%20composition%2C%20no%20shadows%2C%20no%20text%2C%20Content%20simple&width=64&height=64&seq=2&orientation=squarish"
+                alt="Geografi"
+                class="w-10 h-10 object-contain"
+              />
+            </div>
+            <span class="text-xs text-center category-item">Geografi</span>
+          </div>
+
+          <div class="flex flex-col items-center">
+            <div
+              class="w-16 h-16 bg-white shadow rounded-full flex items-center justify-center mb-2"
+            >
+              <img
+                src="https://readdy.ai/api/search-image?query=icon%2C%20Simple%20weather%20symbol%20with%20sun%20and%20cloud%2C%20minimalist%20design%2C%20clear%20lines%2C%20prominent%20main%20subject%2C%20the%20icon%20should%20take%20up%2070%25%20of%20the%20frame%2C%20isolated%20on%20blue%20background%2C%20centered%20composition%2C%20no%20shadows%2C%20no%20text%2C%20Content%20simple&width=64&height=64&seq=3&orientation=squarish"
+                alt="Iklim"
+                class="w-10 h-10 object-contain"
+              />
+            </div>
+            <span class="text-xs text-center category-item">Iklim</span>
+          </div>
+
+          <div class="flex flex-col items-center">
+            <div
+              class="w-16 h-16 bg-white shadow rounded-full flex items-center justify-center mb-2"
+            >
+              <img
+                src="https://readdy.ai/api/search-image?query=icon%2C%20Simple%20human%20figure%20with%20arms%20raised%20in%20success%20pose%2C%20minimalist%20design%2C%20clear%20lines%2C%20prominent%20main%20subject%2C%20the%20icon%20should%20take%20up%2070%25%20of%20the%20frame%2C%20isolated%20on%20blue%20background%2C%20centered%20composition%2C%20no%20shadows%2C%20no%20text%2C%20Content%20simple&width=64&height=64&seq=4&orientation=squarish"
+                alt="IPM"
+                class="w-10 h-10 object-contain"
+              />
+            </div>
+            <span class="text-xs text-center category-item"
+              >Indeks Pem-<br />bangunan Manusia</span
+            >
+          </div>
+          <!-- Row 2 -->
+          <div class="flex flex-col items-center">
+            <div
+              class="w-16 h-16 bg-white shadow rounded-full flex items-center justify-center mb-2"
+            >
+              <img
+                src="https://readdy.ai/api/search-image?query=icon%2C%20Simple%20helping%20hand%20symbol%2C%20minimalist%20design%2C%20clear%20lines%2C%20prominent%20main%20subject%2C%20the%20icon%20should%20take%20up%2070%25%20of%20the%20frame%2C%20isolated%20on%20blue%20background%2C%20centered%20composition%2C%20no%20shadows%2C%20no%20text%2C%20Content%20simple&width=64&height=64&seq=5&orientation=squarish"
+                alt="Kemiskinan"
+                class="w-10 h-10 object-contain"
+              />
+            </div>
+            <span class="text-xs text-center category-item"
+              >Kemiskinan dan<br />Ketimpangan</span
+            >
+          </div>
+
+          <div class="flex flex-col items-center">
+            <div
+              class="w-16 h-16 bg-white shadow rounded-full flex items-center justify-center mb-2"
+            >
+              <img
+                src="https://readdy.ai/api/search-image?query=icon%2C%20Simple%20group%20of%20people%20or%20population%20symbol%2C%20minimalist%20design%2C%20clear%20lines%2C%20prominent%20main%20subject%2C%20the%20icon%20should%20take%20up%2070%25%20of%20the%20frame%2C%20isolated%20on%20blue%20background%2C%20centered%20composition%2C%20no%20shadows%2C%20no%20text%2C%20Content%20simple&width=64&height=64&seq=6&orientation=squarish"
+                alt="Kependudukan"
+                class="w-10 h-10 object-contain"
+              />
+            </div>
+            <span class="text-xs text-center category-item">Kependudukan</span>
+          </div>
+
+          <div class="flex flex-col items-center">
+            <div
+              class="w-16 h-16 bg-white shadow rounded-full flex items-center justify-center mb-2"
+            >
+              <img
+                src="https://readdy.ai/api/search-image?query=icon%2C%20Simple%20medical%20cross%20symbol%2C%20minimalist%20design%2C%20clear%20lines%2C%20prominent%20main%20subject%2C%20the%20icon%20should%20take%20up%2070%25%20of%20the%20frame%2C%20isolated%20on%20blue%20background%2C%20centered%20composition%2C%20no%20shadows%2C%20no%20text%2C%20Content%20simple&width=64&height=64&seq=7&orientation=squarish"
+                alt="Kesehatan"
+                class="w-10 h-10 object-contain"
+              />
+            </div>
+            <span class="text-xs text-center category-item">Kesehatan</span>
+          </div>
+
+          <div class="flex flex-col items-center">
+            <div
+              class="w-16 h-16 bg-white shadow rounded-full flex items-center justify-center mb-2"
+            >
+              <img
+                src="https://readdy.ai/api/search-image?query=icon%2C%20Simple%20shopping%20cart%20or%20basket%20symbol%2C%20minimalist%20design%2C%20clear%20lines%2C%20prominent%20main%20subject%2C%20the%20icon%20should%20take%20up%2070%25%20of%20the%20frame%2C%20isolated%20on%20blue%20background%2C%20centered%20composition%2C%20no%20shadows%2C%20no%20text%2C%20Content%20simple&width=64&height=64&seq=8&orientation=squarish"
+                alt="Konsumsi"
+                class="w-10 h-10 object-contain"
+              />
+            </div>
+            <span class="text-xs text-center category-item"
+              >Konsumsi dan<br />Pengeluaran</span
+            >
+          </div>
+          <!-- Row 3 -->
+          <div class="flex flex-col items-center">
+            <div
+              class="w-16 h-16 bg-white shadow rounded-full flex items-center justify-center mb-2"
+            >
+              <img
+                src="https://readdy.ai/api/search-image?query=icon%2C%20Simple%20leaf%20or%20plant%20symbol%20representing%20environment%2C%20minimalist%20design%2C%20clear%20lines%2C%20prominent%20main%20subject%2C%20the%20icon%20should%20take%20up%2070%25%20of%20the%20frame%2C%20isolated%20on%20blue%20background%2C%20centered%20composition%2C%20no%20shadows%2C%20no%20text%2C%20Content%20simple&width=64&height=64&seq=9&orientation=squarish"
+                alt="Lingkungan"
+                class="w-10 h-10 object-contain"
+              />
+            </div>
+            <span class="text-xs text-center category-item"
+              >Lingkungan<br />Hidup</span
+            >
+          </div>
+
+          <div class="flex flex-col items-center">
+            <div
+              class="w-16 h-16 bg-white shadow rounded-full flex items-center justify-center mb-2"
+            >
+              <img
+                src="https://readdy.ai/api/search-image?query=icon%2C%20Simple%20government%20building%20or%20institution%20symbol%2C%20minimalist%20design%2C%20clear%20lines%2C%20prominent%20main%20subject%2C%20the%20icon%20should%20take%20up%2070%25%20of%20the%20frame%2C%20isolated%20on%20blue%20background%2C%20centered%20composition%2C%20no%20shadows%2C%20no%20text%2C%20Content%20simple&width=64&height=64&seq=10&orientation=squarish"
+                alt="Pemerintahan"
+                class="w-10 h-10 object-contain"
+              />
+            </div>
+            <span class="text-xs text-center category-item">Pemerintahan</span>
+          </div>
+
+          <div class="flex flex-col items-center">
+            <div
+              class="w-16 h-16 bg-white shadow rounded-full flex items-center justify-center mb-2"
+            >
+              <img
+                src="https://readdy.ai/api/search-image?query=icon%2C%20Simple%20graduation%20cap%20or%20education%20symbol%2C%20minimalist%20design%2C%20clear%20lines%2C%20prominent%20main%20subject%2C%20the%20icon%20should%20take%20up%2070%25%20of%20the%20frame%2C%20isolated%20on%20blue%20background%2C%20centered%20composition%2C%20no%20shadows%2C%20no%20text%2C%20Content%20simple&width=64&height=64&seq=11&orientation=squarish"
+                alt="Pendidikan"
+                class="w-10 h-10 object-contain"
+              />
+            </div>
+            <span class="text-xs text-center category-item">Pendidikan</span>
+          </div>
+
+          <div class="flex flex-col items-center">
+            <div
+              class="w-16 h-16 bg-white shadow rounded-full flex items-center justify-center mb-2"
+            >
+              <img
+                src="https://readdy.ai/api/search-image?query=icon%2C%20Simple%20house%20or%20home%20symbol%2C%20minimalist%20design%2C%20clear%20lines%2C%20prominent%20main%20subject%2C%20the%20icon%20should%20take%20up%2070%25%20of%20the%20frame%2C%20isolated%20on%20blue%20background%2C%20centered%20composition%2C%20no%20shadows%2C%20no%20text%2C%20Content%20simple&width=64&height=64&seq=12&orientation=squarish"
+                alt="Perumahan"
+                class="w-10 h-10 object-contain"
+              />
+            </div>
+            <span class="text-xs text-center category-item">Perumahan</span>
+          </div>
+
+          <!-- Row 4 -->
+          <div class="flex flex-col items-center">
+            <div
+              class="w-16 h-16 bg-white shadow rounded-full flex items-center justify-center mb-2"
+            >
+              <img
+                src="https://readdy.ai/api/search-image?query=icon%2C%20Simple%20podium%20or%20security%20shield%20symbol%2C%20minimalist%20design%2C%20clear%20lines%2C%20prominent%20main%20subject%2C%20the%20icon%20should%20take%20up%2070%25%20of%20the%20frame%2C%20isolated%20on%20blue%20background%2C%20centered%20composition%2C%20no%20shadows%2C%20no%20text%2C%20Content%20simple&width=64&height=64&seq=13&orientation=squarish"
+                alt="Politik"
+                class="w-10 h-10 object-contain"
+              />
+            </div>
+            <span class="text-xs text-center category-item"
+              >Politik dan<br />Keamanan</span
+            >
+          </div>
+
+          <div class="flex flex-col items-center">
+            <div
+              class="w-16 h-16 bg-white shadow rounded-full flex items-center justify-center mb-2"
+            >
+              <img
+                src="https://readdy.ai/api/search-image?query=icon%2C%20Simple%20village%20or%20rural%20area%20symbol%2C%20minimalist%20design%2C%20clear%20lines%2C%20prominent%20main%20subject%2C%20the%20icon%20should%20take%20up%2070%25%20of%20the%20frame%2C%20isolated%20on%20blue%20background%2C%20centered%20composition%2C%20no%20shadows%2C%20no%20text%2C%20Content%20simple&width=64&height=64&seq=14&orientation=squarish"
+                alt="Potensi Desa"
+                class="w-10 h-10 object-contain"
+              />
+            </div>
+            <span class="text-xs text-center category-item">Potensi Desa</span>
+          </div>
+
+          <div class="flex flex-col items-center">
+            <div
+              class="w-16 h-16 bg-white shadow rounded-full flex items-center justify-center mb-2"
+            >
+              <img
+                src="https://readdy.ai/api/search-image?query=icon%2C%20Simple%20theater%20masks%20or%20cultural%20symbol%2C%20minimalist%20design%2C%20clear%20lines%2C%20prominent%20main%20subject%2C%20the%20icon%20should%20take%20up%2070%25%20of%20the%20frame%2C%20isolated%20on%20blue%20background%2C%20centered%20composition%2C%20no%20shadows%2C%20no%20text%2C%20Content%20simple&width=64&height=64&seq=15&orientation=squarish"
+                alt="Sosial Budaya"
+                class="w-10 h-10 object-contain"
+              />
+            </div>
+            <span class="text-xs text-center category-item">Sosial Budaya</span>
+          </div>
+
+          <div class="flex flex-col items-center">
+            <div
+              class="w-16 h-16 bg-white shadow rounded-full flex items-center justify-center mb-2"
+            >
+              <img
+                src="https://readdy.ai/api/search-image?query=icon%2C%20Simple%20worker%20or%20labor%20force%20symbol%2C%20minimalist%20design%2C%20clear%20lines%2C%20prominent%20main%20subject%2C%20the%20icon%20should%20take%20up%2070%25%20of%20the%20frame%2C%20isolated%20on%20blue%20background%2C%20centered%20composition%2C%20no%20shadows%2C%20no%20text%2C%20Content%20simple&width=64&height=64&seq=16&orientation=squarish"
+                alt="Tenaga Kerja"
+                class="w-10 h-10 object-contain"
+              />
+            </div>
+            <span class="text-xs text-center category-item">Tenaga Kerja</span>
+          </div>
+        </div>
+        <!-- Red Category Section -->
+        <div class="grid grid-cols-4 gap-4">
+          <!-- Row 1 -->
+          <div class="flex flex-col items-center">
+            <div
+              class="w-16 h-16 bg-white shadow rounded-full flex items-center justify-center mb-2"
+            >
+              <img
+                src="https://readdy.ai/api/search-image?query=icon%2C%20Simple%20import-export%20or%20global%20trade%20symbol%2C%20minimalist%20design%2C%20clear%20lines%2C%20prominent%20main%20subject%2C%20the%20icon%20should%20take%20up%2070%25%20of%20the%20frame%2C%20isolated%20on%20red%20background%2C%20centered%20composition%2C%20no%20shadows%2C%20no%20text%2C%20Content%20simple&width=64&height=64&seq=17&orientation=squarish"
+                alt="Ekspor-Impor"
+                class="w-10 h-10 object-contain"
+              />
+            </div>
+            <span class="text-xs text-center category-item text-secondary"
+              >Ekspor-Impor</span
+            >
+          </div>
+
+          <div class="flex flex-col items-center">
+            <div
+              class="w-16 h-16 bg-white shadow rounded-full flex items-center justify-center mb-2"
+            >
+              <img
+                src="https://readdy.ai/api/search-image?query=icon%2C%20Simple%20lightning%20bolt%20or%20energy%20symbol%2C%20minimalist%20design%2C%20clear%20lines%2C%20prominent%20main%20subject%2C%20the%20icon%20should%20take%20up%2070%25%20of%20the%20frame%2C%20isolated%20on%20red%20background%2C%20centered%20composition%2C%20no%20shadows%2C%20no%20text%2C%20Content%20simple&width=64&height=64&seq=18&orientation=squarish"
+                alt="Energi"
+                class="w-10 h-10 object-contain"
+              />
+            </div>
+            <span class="text-xs text-center category-item text-secondary"
+              >Energi</span
+            >
+          </div>
+
+          <div class="flex flex-col items-center">
+            <div
+              class="w-16 h-16 bg-white shadow rounded-full flex items-center justify-center mb-2"
+            >
+              <img
+                src="https://readdy.ai/api/search-image?query=icon%2C%20Simple%20price%20tag%20or%20retail%20price%20symbol%2C%20minimalist%20design%2C%20clear%20lines%2C%20prominent%20main%20subject%2C%20the%20icon%20should%20take%20up%2070%25%20of%20the%20frame%2C%20isolated%20on%20red%20background%2C%20centered%20composition%2C%20no%20shadows%2C%20no%20text%2C%20Content%20simple&width=64&height=64&seq=19&orientation=squarish"
+                alt="Harga Eceran"
+                class="w-10 h-10 object-contain"
+              />
+            </div>
+            <span class="text-xs text-center category-item text-secondary"
+              >Harga Eceran</span
+            >
+          </div>
+
+          <div class="flex flex-col items-center">
+            <div
+              class="w-16 h-16 bg-white shadow rounded-full flex items-center justify-center mb-2"
+            >
+              <img
+                src="https://readdy.ai/api/search-image?query=icon%2C%20Simple%20percentage%20or%20wholesale%20price%20index%20symbol%2C%20minimalist%20design%2C%20clear%20lines%2C%20prominent%20main%20subject%2C%20the%20icon%20should%20take%20up%2070%25%20of%20the%20frame%2C%20isolated%20on%20red%20background%2C%20centered%20composition%2C%20no%20shadows%2C%20no%20text%2C%20Content%20simple&width=64&height=64&seq=20&orientation=squarish"
+                alt="Indeks Harga"
+                class="w-10 h-10 object-contain"
+              />
+            </div>
+            <span class="text-xs text-center category-item text-secondary"
+              >Indeks Harga</span
+            >
+          </div>
+
+          <!-- Row 2 -->
+          <div class="flex flex-col items-center">
+            <div
+              class="w-16 h-16 bg-white shadow rounded-full flex items-center justify-center mb-2"
+            >
+              <img
+                src="https://readdy.ai/api/search-image?query=icon%2C%20Simple%20gear%20or%20industrial%20symbol%2C%20minimalist%20design%2C%20clear%20lines%2C%20prominent%20main%20subject%2C%20the%20icon%20should%20take%20up%2070%25%20of%20the%20frame%2C%20isolated%20on%20red%20background%2C%20centered%20composition%2C%20no%20shadows%2C%20no%20text%2C%20Content%20simple&width=64&height=64&seq=21&orientation=squarish"
+                alt="Industri"
+                class="w-10 h-10 object-contain"
+              />
+            </div>
+            <span class="text-xs text-center category-item text-secondary"
+              >Industri</span
+            >
+          </div>
+
+          <div class="flex flex-col items-center">
+            <div
+              class="w-16 h-16 bg-white shadow rounded-full flex items-center justify-center mb-2"
+            >
+              <img
+                src="https://readdy.ai/api/search-image?query=icon%2C%20Simple%20chart%20or%20inflation%20graph%20symbol%2C%20minimalist%20design%2C%20clear%20lines%2C%20prominent%20main%20subject%2C%20the%20icon%20should%20take%20up%2070%25%20of%20the%20frame%2C%20isolated%20on%20red%20background%2C%20centered%20composition%2C%20no%20shadows%2C%20no%20text%2C%20Content%20simple&width=64&height=64&seq=22&orientation=squarish"
+                alt="Inflasi"
+                class="w-10 h-10 object-contain"
+              />
+            </div>
+            <span class="text-xs text-center category-item text-secondary"
+              >Inflasi</span
+            >
+          </div>
+
+          <div class="flex flex-col items-center">
+            <div
+              class="w-16 h-16 bg-white shadow rounded-full flex items-center justify-center mb-2"
+            >
+              <img
+                src="https://readdy.ai/api/search-image?query=icon%2C%20Simple%20heart%20or%20input-output%20symbol%2C%20minimalist%20design%2C%20clear%20lines%2C%20prominent%20main%20subject%2C%20the%20icon%20should%20take%20up%2070%25%20of%20the%20frame%2C%20isolated%20on%20red%20background%2C%20centered%20composition%2C%20no%20shadows%2C%20no%20text%2C%20Content%20simple&width=64&height=64&seq=23&orientation=squarish"
+                alt="Input output"
+                class="w-10 h-10 object-contain"
+              />
+            </div>
+            <span class="text-xs text-center category-item text-secondary"
+              >Input output</span
+            >
+          </div>
+
+          <div class="flex flex-col items-center">
+            <div
+              class="w-16 h-16 bg-white shadow rounded-full flex items-center justify-center mb-2"
+            >
+              <img
+                src="https://readdy.ai/api/search-image?query=icon%2C%20Simple%20shopping%20bag%20or%20retail%20trade%20symbol%2C%20minimalist%20design%2C%20clear%20lines%2C%20prominent%20main%20subject%2C%20the%20icon%20should%20take%20up%2070%25%20of%20the%20frame%2C%20isolated%20on%20red%20background%2C%20centered%20composition%2C%20no%20shadows%2C%20no%20text%2C%20Content%20simple&width=64&height=64&seq=24&orientation=squarish"
+                alt="ITK"
+                class="w-10 h-10 object-contain"
+              />
+            </div>
+            <span class="text-xs text-center category-item text-secondary"
+              >ITK</span
+            >
+          </div>
+        </div>
+      </main>
+
+      <!-- Bottom Navigation -->
+      <nav
+        class="fixed bottom-0 left-1/2 -translate-x-1/2 w-[375px] bg-white border-t border-gray-200 h-16"
+      >
+        <div class="relative h-full px-2">
+          <div class="grid grid-cols-5 h-full">
+            <a href="#" class="flex flex-col items-center justify-center">
+              <i class="ri-file-list-line text-gray-500 ri-lg"></i>
+              <span class="text-[10px] text-gray-500 mt-1">Publikasi</span>
+            </a>
+            <a href="#" class="flex flex-col items-center justify-center">
+              <i class="ri-newspaper-line text-gray-500 ri-lg"></i>
+              <span class="text-[10px] text-gray-500 mt-1">Berita Resmi</span>
+            </a>
+            <a
+              href="index.html"
+              class="flex flex-col items-center justify-center"
+            >
+              <i class="ri-home-4-line text-gray-500 ri-lg"></i>
+              <span class="text-[10px] text-gray-500 mt-1">Beranda</span>
+            </a>
+            <a href="#" class="flex flex-col items-center justify-center">
+              <i class="ri-article-line text-gray-500 ri-lg"></i>
+              <span class="text-[10px] text-gray-500 mt-1">Berita</span>
+            </a>
+            <div class="flex flex-col items-center justify-center relative">
+              <a
+                href="#"
+                class="absolute -top-6 w-14 h-14 bg-white shadow rounded-full flex flex-col items-center justify-center shadow-lg text-center"
+              >
+                <i class="ri-database-2-line text-white ri-xl"></i>
+                <span class="text-[10px] text-white mt-0.5">Data</span>
+              </a>
+            </div>
+            <!-- <a href="#" class="flex flex-col items-center justify-center">
+              <i class="ri-database-2-line text-gray-500 ri-lg"></i>
+              <span class="text-[10px] text-gray-500 mt-1">Data</span>
+            </a> -->
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const categoryItems = document.querySelectorAll(".category-item");
+        categoryItems.forEach((item) => {
+          item.addEventListener("click", function () {
+            const categoryName = this.textContent.trim();
+            console.log(`Category clicked: ${categoryName}`);
+            // Here you would add navigation logic to the specific category page
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

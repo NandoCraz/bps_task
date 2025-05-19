@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Berita Resmi - Statistik Surabaya</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { primary: "#0288d1", secondary: "#f5a623" },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :where([class^="ri-"])::before {
+        content: "\f3c2";
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #f8f9fa;
+      }
+      .search-input:focus {
+        outline: none;
+      }
+
+      .gradient-bg {
+        background: linear-gradient(
+          180deg,
+          #0e87c5 0%,
+          rgba(14, 135, 197, 0.8) 50%,
+          rgba(255, 255, 255, 0) 100%
+        );
+      }
+    </style>
+  </head>
+  <body class="bg-white">
+    <div
+      id="home-page"
+      class="relative pb-20 min-h-[762px] mx-auto w-full max-w-[420px]"
+    >
+      <!-- Header -->
+      <header
+        class="gradient-bg w-full max-w-[420px] h-[180px] fixed top-0 left-1/2 -translate-x-1/2 z-10 pt-4 px-4"
+      >
+        <div class="flex justify-between items-center">
+          <div class="flex items-center gap-2">
+            <div
+              class="w-10 h-10 bg-white rounded-lg flex items-center justify-center"
+            >
+              <i class="ri-book-open-line text-primary ri-lg"></i>
+            </div>
+            <span class="text-white font-semibold text-lg"
+              >Statistik Surabaya</span
+            >
+          </div>
+          <div class="flex gap-3">
+            <div class="w-8 h-8 flex items-center justify-center">
+              <i class="ri-user-line text-white ri-lg cursor-pointer"></i>
+            </div>
+            <div class="w-8 h-8 flex items-center justify-center">
+              <i class="ri-question-line text-white ri-lg cursor-pointer"></i>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- Search Bar -->
+      <div class="w-full bg-white z-10 px-4 py-3 shadow-sm">
+        <div class="relative">
+          <input
+            type="text"
+            class="search-input w-full py-2 px-4 pr-10 bg-gray-100 rounded-button text-sm"
+            placeholder="Cari berita resmi..."
+          />
+          <div
+            class="absolute right-3 top-1/2 transform -translate-y-1/2 w-5 h-5 flex items-center justify-center"
+          >
+            <i class="ri-search-line text-gray-500"></i>
+          </div>
+        </div>
+      </div>
+      <!-- Main Content -->
+      <main class="pt-[120px] pb-20 px-4">
+        <h1 class="text-xl font-semibold mb-4 text-gray-800">Berita Resmi</h1>
+        <div class="space-y-3">
+          <!-- News Item 1 -->
+          <div class="bg-white rounded-md shadow-sm p-4">
+            <div class="flex justify-between items-start">
+              <div class="flex-1">
+                <h3 class="font-medium text-gray-800 mb-1">
+                  Hasil Sensus Penduduk Kota Surabaya Tahun 2024
+                </h3>
+                <div class="flex items-center text-xs text-gray-500 mb-2">
+                  <span>19/05/2025</span>
+                  <span class="mx-2">•</span>
+                  <span>2.4 MB</span>
+                </div>
+                <p class="text-sm text-gray-600 line-clamp-2 mb-2">
+                  Laporan lengkap hasil Sensus Penduduk Kota Surabaya tahun 2024
+                  menunjukkan pertumbuhan populasi sebesar 2.3% dibanding tahun
+                  sebelumnya. Data mencakup struktur demografis, persebaran
+                  penduduk, dan indikator sosial ekonomi.
+                </p>
+                <button
+                  class="text-primary text-sm font-medium flex items-center gap-1 show-more-btn"
+                >
+                  <span>Baca selengkapnya</span>
+                  <i class="ri-arrow-down-s-line"></i>
+                </button>
+                <div class="hidden mt-3 text-sm text-gray-600 news-detail">
+                  <p class="mb-2">
+                    Hasil sensus menunjukkan peningkatan signifikan dalam
+                    beberapa aspek:
+                  </p>
+                  <ul class="list-disc pl-4 mb-2">
+                    <li>Total populasi: 3.2 juta jiwa</li>
+                    <li>Rasio gender: 102 laki-laki per 100 perempuan</li>
+                    <li>Pertumbuhan ekonomi: 5.6% per tahun</li>
+                    <li>Tingkat pendidikan: 82% lulusan SMA</li>
+                  </ul>
+                  <p>
+                    Data ini akan digunakan sebagai dasar perencanaan
+                    pembangunan kota untuk 5 tahun ke depan.
+                  </p>
+                </div>
+              </div>
+              <button
+                class="w-8 h-8 flex items-center justify-center text-primary cursor-pointer"
+              >
+                <i class="ri-download-line ri-lg"></i>
+              </button>
+            </div>
+          </div>
+          <!-- News Item 2 -->
+          <div class="bg-white rounded-md shadow-sm p-4">
+            <div class="flex justify-between items-start">
+              <div class="flex-1">
+                <h3 class="font-medium text-gray-800 mb-1">
+                  Statistik Ketenagakerjaan Kota Surabaya Triwulan I 2025
+                </h3>
+                <div class="flex items-center text-xs text-gray-500 mb-2">
+                  <span>15/05/2025</span>
+                  <span class="mx-2">•</span>
+                  <span>3.1 MB</span>
+                </div>
+                <p class="text-sm text-gray-600 line-clamp-2 mb-2">
+                  Laporan statistik ketenagakerjaan menunjukkan penurunan
+                  tingkat pengangguran terbuka menjadi 4.8%. Tercatat
+                  peningkatan signifikan pada sektor industri kreatif dan
+                  teknologi informasi.
+                </p>
+                <button
+                  class="text-primary text-sm font-medium flex items-center gap-1 show-more-btn"
+                >
+                  <span>Baca selengkapnya</span>
+                  <i class="ri-arrow-down-s-line"></i>
+                </button>
+                <div class="hidden mt-3 text-sm text-gray-600 news-detail">
+                  <p class="mb-2">Indikator utama ketenagakerjaan:</p>
+                  <ul class="list-disc pl-4 mb-2">
+                    <li>Tingkat Partisipasi Angkatan Kerja (TPAK): 68.5%</li>
+                    <li>Tingkat Pengangguran Terbuka (TPT): 4.8%</li>
+                    <li>Pekerja formal: 62.3%</li>
+                    <li>Pekerja informal: 37.7%</li>
+                  </ul>
+                  <p>Sektor dengan pertumbuhan tertinggi:</p>
+                  <ul class="list-disc pl-4">
+                    <li>Teknologi Informasi: +15.3%</li>
+                    <li>Industri Kreatif: +12.7%</li>
+                    <li>E-commerce: +10.5%</li>
+                  </ul>
+                </div>
+              </div>
+              <button
+                class="w-8 h-8 flex items-center justify-center text-primary cursor-pointer"
+              >
+                <i class="ri-download-line ri-lg"></i>
+              </button>
+            </div>
+          </div>
+          <!-- News Item 3 -->
+          <div class="bg-white rounded-md shadow-sm p-4">
+            <div class="flex justify-between items-start">
+              <div class="flex-1">
+                <h3 class="font-medium text-gray-800 mb-1">
+                  Indeks Harga Konsumen dan Inflasi Kota Surabaya April 2025
+                </h3>
+                <div class="flex items-center text-xs text-gray-500 mb-2">
+                  <span>10/05/2025</span>
+                  <span class="mx-2">•</span>
+                  <span>1.8 MB</span>
+                </div>
+                <p class="text-sm text-gray-600 line-clamp-2 mb-2">
+                  Laporan bulanan mengenai pergerakan harga konsumen dan tingkat
+                  inflasi di Kota Surabaya. Inflasi April 2025 tercatat sebesar
+                  3.2% (yoy) dengan kenaikan tertinggi pada kelompok
+                  transportasi.
+                </p>
+                <button
+                  class="text-primary text-sm font-medium flex items-center gap-1 show-more-btn"
+                >
+                  <span>Baca selengkapnya</span>
+                  <i class="ri-arrow-down-s-line"></i>
+                </button>
+                <div class="hidden mt-3 text-sm text-gray-600 news-detail">
+                  <p class="mb-2">Rincian Inflasi per Kelompok Pengeluaran:</p>
+                  <ul class="list-disc pl-4 mb-2">
+                    <li>Makanan dan Minuman: 3.8%</li>
+                    <li>Transportasi: 4.5%</li>
+                    <li>Perumahan: 2.9%</li>
+                    <li>Pendidikan: 2.1%</li>
+                    <li>Kesehatan: 2.7%</li>
+                  </ul>
+                  <p class="mb-2">Faktor Utama Pendorong Inflasi:</p>
+                  <ul class="list-disc pl-4">
+                    <li>Kenaikan harga BBM</li>
+                    <li>Penyesuaian tarif angkutan umum</li>
+                    <li>Kenaikan harga pangan strategis</li>
+                  </ul>
+                </div>
+              </div>
+              <button
+                class="w-8 h-8 flex items-center justify-center text-primary cursor-pointer"
+              >
+                <i class="ri-download-line ri-lg"></i>
+              </button>
+            </div>
+          </div>
+          <!-- News Item 4 -->
+          <div class="bg-white rounded-md shadow-sm p-4">
+            <div class="flex justify-between items-start">
+              <div class="flex-1">
+                <h3 class="font-medium text-gray-800 mb-1">
+                  Perkembangan Ekspor dan Impor Kota Surabaya Maret 2025
+                </h3>
+                <div class="flex items-center text-xs text-gray-500">
+                  <span>05/05/2025</span>
+                  <span class="mx-2">•</span>
+                  <span>2.7 MB</span>
+                </div>
+              </div>
+              <button
+                class="w-8 h-8 flex items-center justify-center text-primary cursor-pointer"
+              >
+                <i class="ri-download-line ri-lg"></i>
+              </button>
+            </div>
+          </div>
+          <!-- News Item 5 -->
+          <div class="bg-white rounded-md shadow-sm p-4">
+            <div class="flex justify-between items-start">
+              <div class="flex-1">
+                <h3 class="font-medium text-gray-800 mb-1">
+                  Produk Domestik Regional Bruto Kota Surabaya Triwulan I 2025
+                </h3>
+                <div class="flex items-center text-xs text-gray-500">
+                  <span>01/05/2025</span>
+                  <span class="mx-2">•</span>
+                  <span>4.2 MB</span>
+                </div>
+              </div>
+              <button
+                class="w-8 h-8 flex items-center justify-center text-primary cursor-pointer"
+              >
+                <i class="ri-download-line ri-lg"></i>
+              </button>
+            </div>
+          </div>
+          <!-- News Item 6 -->
+          <div class="bg-white rounded-md shadow-sm p-4">
+            <div class="flex justify-between items-start">
+              <div class="flex-1">
+                <h3 class="font-medium text-gray-800 mb-1">
+                  Statistik Pendidikan Kota Surabaya Tahun 2024/2025
+                </h3>
+                <div class="flex items-center text-xs text-gray-500">
+                  <span>28/04/2025</span>
+                  <span class="mx-2">•</span>
+                  <span>3.5 MB</span>
+                </div>
+              </div>
+              <button
+                class="w-8 h-8 flex items-center justify-center text-primary cursor-pointer"
+              >
+                <i class="ri-download-line ri-lg"></i>
+              </button>
+            </div>
+          </div>
+          <!-- News Item 7 -->
+          <div class="bg-white rounded-md shadow-sm p-4">
+            <div class="flex justify-between items-start">
+              <div class="flex-1">
+                <h3 class="font-medium text-gray-800 mb-1">
+                  Indikator Kesejahteraan Rakyat Kota Surabaya 2024
+                </h3>
+                <div class="flex items-center text-xs text-gray-500">
+                  <span>25/04/2025</span>
+                  <span class="mx-2">•</span>
+                  <span>2.9 MB</span>
+                </div>
+              </div>
+              <button
+                class="w-8 h-8 flex items-center justify-center text-primary cursor-pointer"
+              >
+                <i class="ri-download-line ri-lg"></i>
+              </button>
+            </div>
+          </div>
+          <!-- News Item 8 -->
+          <div class="bg-white rounded-md shadow-sm p-4">
+            <div class="flex justify-between items-start">
+              <div class="flex-1">
+                <h3 class="font-medium text-gray-800 mb-1">
+                  Statistik Kriminalitas Kota Surabaya Triwulan I 2025
+                </h3>
+                <div class="flex items-center text-xs text-gray-500">
+                  <span>20/04/2025</span>
+                  <span class="mx-2">•</span>
+                  <span>1.6 MB</span>
+                </div>
+              </div>
+              <button
+                class="w-8 h-8 flex items-center justify-center text-primary cursor-pointer"
+              >
+                <i class="ri-download-line ri-lg"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- Bottom Navigation -->
+      <nav
+        class="fixed bottom-0 left-1/2 -translate-x-1/2 w-[375px] bg-white border-t border-gray-200 h-16"
+      >
+        <div class="relative h-full px-2">
+          <div class="grid grid-cols-5 h-full">
+            <a href="#" class="flex flex-col items-center justify-center">
+              <i class="ri-file-list-line text-gray-500 ri-lg"></i>
+              <span class="text-[10px] text-gray-500 mt-1">Publikasi</span>
+            </a>
+            <div class="flex flex-col items-center justify-center relative">
+              <a
+                href="#"
+                class="absolute -top-6 w-14 h-14 bg-primary rounded-full flex flex-col items-center justify-center shadow-lg text-center"
+              >
+                <i class="ri-newspaper-line text-white ri-xl"></i>
+                <span class="text-[10px] text-white mt-0.5">Berita Resmi</span>
+              </a>
+            </div>
+            <a
+              href="index.html"
+              class="flex flex-col items-center justify-center"
+            >
+              <i class="ri-home-4-line text-gray-500 ri-lg"></i>
+              <span class="text-[10px] text-gray-500 mt-1">Beranda</span>
+            </a>
+            <a href="#" class="flex flex-col items-center justify-center">
+              <i class="ri-article-line text-gray-500 ri-lg"></i>
+              <span class="text-[10px] text-gray-500 mt-1">Berita</span>
+            </a>
+            <a href="#" class="flex flex-col items-center justify-center">
+              <i class="ri-database-2-line text-gray-500 ri-lg"></i>
+              <span class="text-[10px] text-gray-500 mt-1">Data</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const searchInput = document.querySelector(".search-input");
+        const newsItems = document.querySelectorAll(".bg-white.rounded-md");
+        const showMoreButtons = document.querySelectorAll(".show-more-btn");
+        showMoreButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            const detail = this.nextElementSibling;
+            const icon = this.querySelector("i");
+            if (detail.classList.contains("hidden")) {
+              detail.classList.remove("hidden");
+              this.querySelector("span").textContent = "Sembunyikan";
+              icon.classList.remove("ri-arrow-down-s-line");
+              icon.classList.add("ri-arrow-up-s-line");
+            } else {
+              detail.classList.add("hidden");
+              this.querySelector("span").textContent = "Baca selengkapnya";
+              icon.classList.remove("ri-arrow-up-s-line");
+              icon.classList.add("ri-arrow-down-s-line");
+            }
+          });
+        });
+        searchInput.addEventListener("input", function () {
+          const searchTerm = this.value.toLowerCase();
+          newsItems.forEach((item) => {
+            const title = item.querySelector("h3").textContent.toLowerCase();
+            if (title.includes(searchTerm)) {
+              item.style.display = "block";
+            } else {
+              item.style.display = "none";
+            }
+          });
+        });
+        // Simulate pull-to-refresh functionality
+        let touchStartY = 0;
+        document.addEventListener(
+          "touchstart",
+          function (e) {
+            touchStartY = e.touches[0].clientY;
+          },
+          { passive: true }
+        );
+        document.addEventListener(
+          "touchmove",
+          function (e) {
+            const touchY = e.touches[0].clientY;
+            const scrollTop =
+              document.documentElement.scrollTop || document.body.scrollTop;
+            if (scrollTop === 0 && touchY - touchStartY > 70) {
+              e.preventDefault();
+              // In a real app, you would refresh the content here
+              console.log("Pull-to-refresh triggered");
+            }
+          },
+          { passive: false }
+        );
+        // Simulate infinite scroll
+        window.addEventListener(
+          "scroll",
+          function () {
+            const scrollHeight = document.documentElement.scrollHeight;
+            const scrollTop =
+              document.documentElement.scrollTop || document.body.scrollTop;
+            const clientHeight = document.documentElement.clientHeight;
+            if (scrollTop + clientHeight >= scrollHeight - 100) {
+              // In a real app, you would load more content here
+              console.log("Infinite scroll triggered");
+            }
+          },
+          { passive: true }
+        );
+        // Download button functionality
+        const downloadButtons = document.querySelectorAll(".ri-download-line");
+        downloadButtons.forEach((button, index) => {
+          button.addEventListener("click", function () {
+            const newsTitle = newsItems[index].querySelector("h3").textContent;
+            console.log(`Downloading: ${newsTitle}`);
+            // In a real app, you would trigger the download here
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

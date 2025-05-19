@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Statistik Surabaya - Publikasi</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { primary: "#3498db", secondary: "#f39c12" },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :where([class^="ri-"])::before {
+        content: "\f3c2";
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #f8f9fa;
+      }
+      .publication-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+          0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      }
+      .gradient-bg {
+        background: linear-gradient(
+          180deg,
+          #0e87c5 0%,
+          rgba(14, 135, 197, 0.8) 50%,
+          rgba(255, 255, 255, 0) 100%
+        );
+      }
+    </style>
+  </head>
+  <body class="bg-white">
+    <div
+      id="home-page"
+      class="relative pt-20 min-h-[762px] mx-auto w-full max-w-[420px]"
+    >
+      <header
+        class="gradient-bg w-full max-w-[420px] h-[180px] fixed top-0 left-1/2 -translate-x-1/2 z-10 pt-4 px-4"
+      >
+        <div class="flex justify-between items-center">
+          <div class="flex items-center gap-2">
+            <div
+              class="w-10 h-10 bg-white rounded-lg flex items-center justify-center"
+            >
+              <i class="ri-book-open-line text-primary ri-lg"></i>
+            </div>
+            <span class="text-white font-semibold text-lg"
+              >Statistik Surabaya</span
+            >
+          </div>
+          <div class="flex gap-3">
+            <div class="w-8 h-8 flex items-center justify-center">
+              <i class="ri-user-line text-white ri-lg cursor-pointer"></i>
+            </div>
+            <div class="w-8 h-8 flex items-center justify-center">
+              <i class="ri-question-line text-white ri-lg cursor-pointer"></i>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- Main Content -->
+      <div class="pt-[80px] pb-[120px] px-4 min-h-screen">
+        <!-- Header Section -->
+        <div class="mt-4 mb-6">
+          <h1 class="text-2xl font-bold text-gray-800 mb-4">Publikasi</h1>
+
+          <!-- Search and Filter Section -->
+          <div class="mb-4">
+            <div class="relative">
+              <input
+                type="text"
+                placeholder="Cari publikasi..."
+                class="w-full px-4 py-3 pr-10 border border-gray-200 rounded-button shadow-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+              />
+              <button
+                class="absolute right-3 top-3 text-gray-500 w-6 h-6 flex items-center justify-center"
+              >
+                <i class="ri-search-line ri-lg"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Filter Options -->
+          <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
+            <div class="flex flex-wrap gap-2">
+              <div class="relative">
+                <button
+                  class="flex items-center space-x-1 px-3 py-2 bg-white border border-gray-200 rounded-button shadow-sm hover:bg-gray-50 cursor-pointer"
+                >
+                  <span class="text-sm text-gray-700">Semua Kategori</span>
+                  <i class="ri-arrow-down-s-line text-gray-500"></i>
+                </button>
+              </div>
+
+              <div class="relative">
+                <button
+                  class="flex items-center space-x-1 px-3 py-2 bg-white border border-gray-200 rounded-button shadow-sm hover:bg-gray-50 cursor-pointer"
+                >
+                  <span class="text-sm text-gray-700">Semua Tahun</span>
+                  <i class="ri-arrow-down-s-line text-gray-500"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="flex items-center space-x-2">
+              <span class="text-sm text-gray-600">Urutkan:</span>
+              <button
+                class="flex items-center space-x-1 px-3 py-2 bg-white border border-gray-200 rounded-button shadow-sm hover:bg-gray-50 cursor-pointer"
+              >
+                <span class="text-sm text-gray-700">Terbaru</span>
+                <i class="ri-arrow-down-s-line text-gray-500"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- View Toggle -->
+          <div class="flex justify-end mb-4">
+            <div
+              class="flex border border-gray-200 rounded-button overflow-hidden"
+            >
+              <button class="px-3 py-2 bg-primary text-white cursor-pointer">
+                <i class="ri-grid-line ri-lg"></i>
+              </button>
+              <button class="px-3 py-2 bg-white text-gray-600 cursor-pointer">
+                <i class="ri-list-check-line ri-lg"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Publications Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <!-- Publication Item 1 -->
+          <div
+            class="publication-card bg-white rounded-lg shadow-sm overflow-hidden border border-gray-100 transition-all duration-300"
+          >
+            <div class="relative h-40 bg-gray-100">
+              <img
+                src="https://readdy.ai/api/search-image?query=statistical%20report%20cover%2C%20data%20visualization%2C%20charts%20and%20graphs%2C%20professional%20layout%2C%20clean%20design%2C%20blue%20color%20scheme%2C%20government%20publication&width=400&height=300&seq=1&orientation=landscape"
+                alt="Cover Publikasi"
+                class="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-gray-800 line-clamp-2 mb-2">
+                Statistik Kesejahteraan Rakyat Kota Surabaya 2025
+              </h3>
+              <div class="flex flex-col space-y-1 mb-3">
+                <div class="flex items-center text-sm text-gray-600">
+                  <i class="ri-calendar-line mr-2"></i>
+                  <span>2025-05-15</span>
+                </div>
+                <div class="flex items-center text-sm text-gray-600">
+                  <i class="ri-file-list-line mr-2"></i>
+                  <span>15.42 MB</span>
+                </div>
+              </div>
+              <div class="flex space-x-2">
+                <button
+                  class="flex-1 px-3 py-2 bg-primary text-white rounded-button font-medium text-sm hover:bg-blue-600 transition-colors cursor-pointer"
+                >
+                  UNDUH
+                </button>
+                <button
+                  class="flex-1 px-3 py-2 bg-gray-100 text-gray-700 rounded-button font-medium text-sm hover:bg-gray-200 transition-colors cursor-pointer"
+                >
+                  DETAIL
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Publication Item 2 -->
+          <div
+            class="publication-card bg-white rounded-lg shadow-sm overflow-hidden border border-gray-100 transition-all duration-300"
+          >
+            <div class="relative h-40 bg-gray-100">
+              <img
+                src="https://readdy.ai/api/search-image?query=economic%20report%20cover%2C%20financial%20data%20visualization%2C%20professional%20layout%2C%20clean%20design%2C%20orange%20color%20scheme%2C%20government%20publication&width=400&height=300&seq=2&orientation=landscape"
+                alt="Cover Publikasi"
+                class="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-gray-800 line-clamp-2 mb-2">
+                Produk Domestik Regional Bruto Kota Surabaya 2024
+              </h3>
+              <div class="flex flex-col space-y-1 mb-3">
+                <div class="flex items-center text-sm text-gray-600">
+                  <i class="ri-calendar-line mr-2"></i>
+                  <span>2025-04-30</span>
+                </div>
+                <div class="flex items-center text-sm text-gray-600">
+                  <i class="ri-file-list-line mr-2"></i>
+                  <span>20.79 MB</span>
+                </div>
+              </div>
+              <div class="flex space-x-2">
+                <button
+                  class="flex-1 px-3 py-2 bg-primary text-white rounded-button font-medium text-sm hover:bg-blue-600 transition-colors cursor-pointer"
+                >
+                  UNDUH
+                </button>
+                <button
+                  class="flex-1 px-3 py-2 bg-gray-100 text-gray-700 rounded-button font-medium text-sm hover:bg-gray-200 transition-colors cursor-pointer"
+                >
+                  DETAIL
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Publication Item 3 -->
+          <div
+            class="publication-card bg-white rounded-lg shadow-sm overflow-hidden border border-gray-100 transition-all duration-300"
+          >
+            <div class="relative h-40 bg-gray-100">
+              <img
+                src="https://readdy.ai/api/search-image?query=demographic%20report%20cover%2C%20population%20data%20visualization%2C%20professional%20layout%2C%20clean%20design%2C%20green%20color%20scheme%2C%20government%20publication&width=400&height=300&seq=3&orientation=landscape"
+                alt="Cover Publikasi"
+                class="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-gray-800 line-clamp-2 mb-2">
+                Indikator Kesejahteraan Rakyat Kota Surabaya 2024
+              </h3>
+              <div class="flex flex-col space-y-1 mb-3">
+                <div class="flex items-center text-sm text-gray-600">
+                  <i class="ri-calendar-line mr-2"></i>
+                  <span>2025-03-28</span>
+                </div>
+                <div class="flex items-center text-sm text-gray-600">
+                  <i class="ri-file-list-line mr-2"></i>
+                  <span>18.35 MB</span>
+                </div>
+              </div>
+              <div class="flex space-x-2">
+                <button
+                  class="flex-1 px-3 py-2 bg-primary text-white rounded-button font-medium text-sm hover:bg-blue-600 transition-colors cursor-pointer"
+                >
+                  UNDUH
+                </button>
+                <button
+                  class="flex-1 px-3 py-2 bg-gray-100 text-gray-700 rounded-button font-medium text-sm hover:bg-gray-200 transition-colors cursor-pointer"
+                >
+                  DETAIL
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Publication Item 4 -->
+          <div
+            class="publication-card bg-white rounded-lg shadow-sm overflow-hidden border border-gray-100 transition-all duration-300"
+          >
+            <div class="relative h-40 bg-gray-100">
+              <img
+                src="https://readdy.ai/api/search-image?query=infographic%20report%20cover%2C%20data%20visualization%2C%20colorful%20charts%2C%20professional%20layout%2C%20clean%20design%2C%20purple%20color%20scheme%2C%20government%20publication&width=400&height=300&seq=4&orientation=landscape"
+                alt="Cover Publikasi"
+                class="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-gray-800 line-clamp-2 mb-2">
+                Kota Surabaya Dalam Angka 2024
+              </h3>
+              <div class="flex flex-col space-y-1 mb-3">
+                <div class="flex items-center text-sm text-gray-600">
+                  <i class="ri-calendar-line mr-2"></i>
+                  <span>2025-02-15</span>
+                </div>
+                <div class="flex items-center text-sm text-gray-600">
+                  <i class="ri-file-list-line mr-2"></i>
+                  <span>25.63 MB</span>
+                </div>
+              </div>
+              <div class="flex space-x-2">
+                <button
+                  class="flex-1 px-3 py-2 bg-primary text-white rounded-button font-medium text-sm hover:bg-blue-600 transition-colors cursor-pointer"
+                >
+                  UNDUH
+                </button>
+                <button
+                  class="flex-1 px-3 py-2 bg-gray-100 text-gray-700 rounded-button font-medium text-sm hover:bg-gray-200 transition-colors cursor-pointer"
+                >
+                  DETAIL
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Publication Item 5 -->
+          <div
+            class="publication-card bg-white rounded-lg shadow-sm overflow-hidden border border-gray-100 transition-all duration-300"
+          >
+            <div class="relative h-40 bg-gray-100">
+              <img
+                src="https://readdy.ai/api/search-image?query=education%20report%20cover%2C%20school%20data%20visualization%2C%20professional%20layout%2C%20clean%20design%2C%20teal%20color%20scheme%2C%20government%20publication&width=400&height=300&seq=5&orientation=landscape"
+                alt="Cover Publikasi"
+                class="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-gray-800 line-clamp-2 mb-2">
+                Statistik Pendidikan Kota Surabaya 2024
+              </h3>
+              <div class="flex flex-col space-y-1 mb-3">
+                <div class="flex items-center text-sm text-gray-600">
+                  <i class="ri-calendar-line mr-2"></i>
+                  <span>2025-01-20</span>
+                </div>
+                <div class="flex items-center text-sm text-gray-600">
+                  <i class="ri-file-list-line mr-2"></i>
+                  <span>16.48 MB</span>
+                </div>
+              </div>
+              <div class="flex space-x-2">
+                <button
+                  class="flex-1 px-3 py-2 bg-primary text-white rounded-button font-medium text-sm hover:bg-blue-600 transition-colors cursor-pointer"
+                >
+                  UNDUH
+                </button>
+                <button
+                  class="flex-1 px-3 py-2 bg-gray-100 text-gray-700 rounded-button font-medium text-sm hover:bg-gray-200 transition-colors cursor-pointer"
+                >
+                  DETAIL
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Publication Item 6 -->
+          <div
+            class="publication-card bg-white rounded-lg shadow-sm overflow-hidden border border-gray-100 transition-all duration-300"
+          >
+            <div class="relative h-40 bg-gray-100">
+              <img
+                src="https://readdy.ai/api/search-image?query=health%20report%20cover%2C%20healthcare%20data%20visualization%2C%20professional%20layout%2C%20clean%20design%2C%20red%20color%20scheme%2C%20government%20publication&width=400&height=300&seq=6&orientation=landscape"
+                alt="Cover Publikasi"
+                class="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-gray-800 line-clamp-2 mb-2">
+                Statistik Kesehatan Kota Surabaya 2024
+              </h3>
+              <div class="flex flex-col space-y-1 mb-3">
+                <div class="flex items-center text-sm text-gray-600">
+                  <i class="ri-calendar-line mr-2"></i>
+                  <span>2024-12-10</span>
+                </div>
+                <div class="flex items-center text-sm text-gray-600">
+                  <i class="ri-file-list-line mr-2"></i>
+                  <span>19.27 MB</span>
+                </div>
+              </div>
+              <div class="flex space-x-2">
+                <button
+                  class="flex-1 px-3 py-2 bg-primary text-white rounded-button font-medium text-sm hover:bg-blue-600 transition-colors cursor-pointer"
+                >
+                  UNDUH
+                </button>
+                <button
+                  class="flex-1 px-3 py-2 bg-gray-100 text-gray-700 rounded-button font-medium text-sm hover:bg-gray-200 transition-colors cursor-pointer"
+                >
+                  DETAIL
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="flex justify-center mt-8">
+          <div class="inline-flex rounded-md shadow-sm">
+            <button
+              class="px-3 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50 rounded-l-md cursor-pointer"
+            >
+              <i class="ri-arrow-left-s-line"></i>
+            </button>
+            <button
+              class="px-4 py-2 border-t border-b border-gray-300 bg-primary text-sm font-medium text-white cursor-pointer"
+            >
+              1
+            </button>
+            <button
+              class="px-4 py-2 border-t border-b border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 cursor-pointer"
+            >
+              2
+            </button>
+            <button
+              class="px-4 py-2 border-t border-b border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 cursor-pointer"
+            >
+              3
+            </button>
+            <button
+              class="px-3 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50 rounded-r-md cursor-pointer"
+            >
+              <i class="ri-arrow-right-s-line"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab Bar -->
+      <nav
+        class="fixed bottom-0 left-1/2 -translate-x-1/2 w-[375px] bg-white border-t border-gray-200 h-16"
+      >
+        <div class="relative h-full px-2">
+          <div class="grid grid-cols-5 h-full">
+            <div class="flex flex-col items-center justify-center relative">
+              <a
+                href="#"
+                class="absolute -top-6 w-14 h-14 bg-primary rounded-full flex flex-col items-center justify-center shadow-lg"
+              >
+                <i class="ri-file-list-line text-white ri-xl"></i>
+                <span class="text-[10px] text-white mt-0.5">Publikasi</span>
+              </a>
+            </div>
+            <a href="#" class="flex flex-col items-center justify-center">
+              <i class="ri-newspaper-line text-gray-500 ri-lg"></i>
+              <span class="text-[10px] text-gray-500 mt-1">Berita Resmi</span>
+            </a>
+            <a
+              href="index.html"
+              class="flex flex-col items-center justify-center"
+            >
+              <i class="ri-home-4-line text-gray-500 ri-lg"></i>
+              <span class="text-[10px] text-gray-500 mt-1">Beranda</span>
+            </a>
+            <a href="#" class="flex flex-col items-center justify-center">
+              <i class="ri-article-line text-gray-500 ri-lg"></i>
+              <span class="text-[10px] text-gray-500 mt-1">Berita</span>
+            </a>
+            <a href="#" class="flex flex-col items-center justify-center">
+              <i class="ri-database-2-line text-gray-500 ri-lg"></i>
+              <span class="text-[10px] text-gray-500 mt-1">Data</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Detail button functionality
+        const detailButtons = document.querySelectorAll(
+          ".publication-card button:nth-child(2)"
+        );
+        detailButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            const card = this.closest(".publication-card");
+            const title = card.querySelector("h3").textContent;
+            const imgSrc = card.querySelector("img").src;
+
+            // Create modal for publication details
+            const modal = document.createElement("div");
+            modal.className =
+              "fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4";
+            modal.innerHTML = `
+                        <div class="bg-white rounded-lg max-w-lg w-full max-h-[90vh] overflow-y-auto">
+                            <div class="p-4 border-b border-gray-200 flex justify-between items-center">
+                                <h3 class="text-lg font-semibold text-gray-800">Detail Publikasi</h3>
+                                <button class="text-gray-500 hover:text-gray-700 cursor-pointer">
+                                    <i class="ri-close-line ri-lg"></i>
+                                </button>
+                            </div>
+                            <div class="p-4">
+                                <img src="${imgSrc}" alt="Cover Publikasi" class="w-full h-48 object-cover object-top rounded-lg mb-4">
+                                <h2 class="text-xl font-bold text-gray-800 mb-3">${title}</h2>
+                                <div class="space-y-3 mb-4">
+                                    <div class="flex items-center text-sm text-gray-600">
+                                        <i class="ri-calendar-line mr-2"></i>
+                                        <span>Tanggal Rilis: ${
+                                          card.querySelector(
+                                            ".flex-col div:first-child span"
+                                          ).textContent
+                                        }</span>
+                                    </div>
+                                    <div class="flex items-center text-sm text-gray-600">
+                                        <i class="ri-file-list-line mr-2"></i>
+                                        <span>Ukuran File: ${
+                                          card.querySelector(
+                                            ".flex-col div:last-child span"
+                                          ).textContent
+                                        }</span>
+                                    </div>
+                                    <div class="flex items-center text-sm text-gray-600">
+                                        <i class="ri-folder-line mr-2"></i>
+                                        <span>Kategori: Statistik Sosial</span>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <h4 class="font-semibold text-gray-800 mb-2">Deskripsi</h4>
+                                    <p class="text-sm text-gray-600">
+                                        Publikasi ini menyajikan data dan analisis tentang berbagai indikator sosial dan ekonomi di Kota Surabaya. 
+                                        Data disajikan dalam bentuk tabel dan grafik untuk memudahkan pemahaman pembaca. 
+                                        Publikasi ini dapat digunakan sebagai referensi untuk penelitian, perencanaan, dan evaluasi kebijakan pembangunan.
+                                    </p>
+                                </div>
+                                <div class="border rounded-lg p-3 bg-gray-50 mb-4">
+                                    <h4 class="font-semibold text-gray-800 mb-2">Preview</h4>
+                                    <div class="aspect-[3/4] bg-gray-200 rounded flex items-center justify-center">
+                                        <i class="ri-file-pdf-line text-gray-400 ri-3x"></i>
+                                    </div>
+                                </div>
+                                <button class="w-full py-3 bg-primary text-white rounded-button font-medium hover:bg-blue-600 transition-colors cursor-pointer">
+                                    UNDUH PUBLIKASI
+                                </button>
+                            </div>
+                        </div>
+                    `;
+
+            document.body.appendChild(modal);
+
+            // Close modal functionality
+            modal
+              .querySelector("button")
+              .addEventListener("click", function () {
+                document.body.removeChild(modal);
+              });
+          });
+        });
+
+        // Download button functionality
+        const downloadButtons = document.querySelectorAll(
+          ".publication-card button:first-child"
+        );
+        downloadButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            const card = this.closest(".publication-card");
+            const title = card.querySelector("h3").textContent;
+
+            // Create toast notification
+            const toast = document.createElement("div");
+            toast.className =
+              "fixed bottom-20 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white px-4 py-2 rounded-lg shadow-lg z-50 flex items-center";
+            toast.innerHTML = `
+                        <i class="ri-download-line mr-2"></i>
+                        <span>Mengunduh ${title}</span>
+                    `;
+
+            document.body.appendChild(toast);
+
+            // Remove toast after 3 seconds
+            setTimeout(() => {
+              document.body.removeChild(toast);
+            }, 3000);
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
